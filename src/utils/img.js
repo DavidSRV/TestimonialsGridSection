@@ -5,9 +5,9 @@ import kira from '../assets/images/image-kira.jpg'
 import patrick from '../assets/images/image-patrick.jpg'
 
 export const objImg = {
-    daniel,
-    jeannette,
-    jonathan,
-    kira,
-    patrick
+    "Daniel Clifford":daniel,
+    "Jonathan Walters": jonathan,
+    "Kira Whittle": kira,
+    "Jeanette Harmon": jeannette,
+    "Patrick Abrams": patrick
 }

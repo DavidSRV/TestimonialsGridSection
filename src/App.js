@@ -13,16 +13,19 @@ function App() {
   return (
     <div className="App">
       <main className="App-main">
+
         {info.map((card) => (
-          <Card 
-          key={card.name} 
-          style={card.style}
-          name={card.name}
-          academic={card.info.academic}
-          opinion={card.info.opinion}
-          history={card.info.history}
+          <Card
+            key={card.name}
+            style={card.style}
+            name={card.name}
+            academic={card.info.academic}
+            opinion={card.info.opinion}
+            history={card.info.history}
           />
         ))}
+
+        
       </main>
     </div>
   );

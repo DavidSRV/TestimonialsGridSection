@@ -7,4 +7,8 @@
   font-size: 0.9rem;
 }
 
+#root {
+  background-color: hsl(210deg, 46%, 95%);
+}
+
 /*# sourceMappingURL=styles.css.map */
