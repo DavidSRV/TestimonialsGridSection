@@ -1,19 +1,27 @@
+@use '../../scss/co';
+
 .container {
 
     margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
 
 
     &.__card1 {
         grid-column: span 2;
+        background-color: co.$Moderateviolet;
     }
 
     & .imgCard {
-        margin: 10px;
+        margin: 15px 20px;
         display: flex;
         flex-direction: row;
         align-items: center;
-        position: relative;
-        
+
+        & .name_titleCard {
+            position: relative;
+            margin: 0 30px;
+        }
 
         & img {
             border: 1px solid white;
@@ -23,5 +31,22 @@
 
     }
 
-}
+    &.__info {
 
+
+        & .Opinion{
+            font-size: 1.3rem;
+        }
+
+        & .Story{
+            margin-top: 15px;
+        }
+    }
+
+
+
+
+
+
+
+}
