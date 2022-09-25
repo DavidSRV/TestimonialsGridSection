@@ -1,0 +1,15 @@
+.App{
+    margin: 0 100px;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .App-main{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+}

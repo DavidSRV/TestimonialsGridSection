@@ -1,0 +1,27 @@
+.container {
+
+    margin: 10px;
+
+
+    &.__card1 {
+        grid-column: span 2;
+    }
+
+    & .imgCard {
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        
+
+        & img {
+            border: 1px solid white;
+            border-radius: 50%;
+            height: 50%;
+        }
+
+    }
+
+}
+
