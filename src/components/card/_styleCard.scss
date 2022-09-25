@@ -3,31 +3,49 @@
 .container {
     padding: 10px;
     border-radius: 10px;
+    line-height: 1.3rem;
 
     &.__card1 {
-        
+
         color: co.$White;
         grid-column: span 2;
         background-color: co.$Moderateviolet;
+        background-image: url("../../assets/images/bg-pattern-quotation.svg");
+        background-position: 80% top;
+        background-repeat: no-repeat;
+        background-size: 120px;
 
-        &.__info{
-            & .Story{
-                color: hsla(0, 0%, 100%, 0.504) ;
+        & .imgCard {
+            
+            margin: 10px 0 0 20px;
+
+            & img {
+                border: 4px solid hsla(0, 0%, 100%, 0.504)
+            
+            }
+
+            & .name_titleCard {
+
+                & .academic {
+                    color: hsla(0, 0%, 100%, 0.504);
+                }
             }
         }
 
-        & .imgCard {
+        &.__info {
 
-            & img{
-                border: 4px solid  hsla(0, 0%, 100%, 0.504) 
+            background-image: none;
+            display: inline;
 
+            & .Opinion{
+                margin: 5px 20px;
             }
 
-            & .name_titleCard{
-                & .academic{
-                    color:  hsla(0, 0%, 100%, 0.504) ;
-                }
+            & .Story {
+                color: hsla(0, 0%, 100%, 0.504);
+                margin: 10px 0 10px 20px;
             }
+
         }
 
     }
@@ -37,20 +55,18 @@
         grid-column: 3;
         background-color: co.$Verydarkgrayishblue;
 
+        & .imgCard {
 
-        &.__info{
-            & .Story{
-                color: hsla(0, 0%, 100%, 0.504) ;
+            & .name_titleCard {
+                & .academic {
+                    color: hsla(0, 0%, 100%, 0.504);
+                }
             }
         }
 
-        & .imgCard {
-
-
-            & .name_titleCard{
-                & .academic{
-                    color:  hsla(0, 0%, 100%, 0.504) ;
-                }
+        &.__info {
+            & .Story {
+                color: hsla(0, 0%, 100%, 0.504);
             }
         }
     }
@@ -60,22 +76,22 @@
         grid-row: 2;
         background-color: co.$White;
 
-        &.__info{
-            & .Story{
-                color: hsla(217, 19%, 35%, 0.501);
-            }
-        }
-
         & .imgCard {
 
-            & .name_titleCard{
-                & .academic{
-                    color:hsla(217, 19%, 35%, 0.501);
+            & .name_titleCard {
+                & .academic {
+                    color: hsla(217, 19%, 35%, 0.501);
                 }
             }
         }
 
-        
+        &.__info {
+
+            & .Story {
+                color: hsla(217, 19%, 35%, 0.501);
+            }
+        }
+
     }
 
     &.__card4 {
@@ -84,23 +100,22 @@
         grid-column: span 2;
         background-color: co.$Verydarkblackishblue;
 
-        &.__info{
-            & .Story{
-                color: hsla(0, 0%, 100%, 0.504) ;
+        & .imgCard {
+
+            & img {
+                border: 4px solid co.$Moderateviolet
+            }
+
+            & .name_titleCard {
+                & .academic {
+                    color: hsla(0, 0%, 100%, 0.504);
+                }
             }
         }
 
-        & .imgCard {
-
-            & img{
-                border: 4px solid  co.$Moderateviolet
-
-            }
-
-            & .name_titleCard{
-                & .academic{
-                    color:  hsla(0, 0%, 100%, 0.504) ;
-                }
+        &.__info {
+            & .Story {
+                color: hsla(0, 0%, 100%, 0.504);
             }
         }
     }
@@ -110,18 +125,20 @@
         grid-row: span 2;
         background-color: co.$White;
 
-        &.__info{
-            & .Story{
-                color:   hsla(217, 19%, 35%, 0.501);
+        & .imgCard {
+
+            & .name_titleCard {
+
+
+                & .academic {
+                    color: hsla(217, 19%, 35%, 0.501);
+                }
             }
         }
 
-        & .imgCard {
-
-            & .name_titleCard{
-                & .academic{
-                    color:   hsla(217, 19%, 35%, 0.501);
-                }
+        &.__info {
+            & .Story {
+                color: hsla(217, 19%, 35%, 0.501);
             }
         }
     }
@@ -131,7 +148,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        width: 200xp;
+        width: 200px;
 
         & .name_titleCard {
             margin: 0 30px;
@@ -147,17 +164,16 @@
 
     &.__info {
 
-        line-height: 1.3rem;
-
         & .Opinion {
             font-size: 1.5rem;
-            line-height: 1.5rem;
+            line-height: 25px;
         }
 
         & .Story {
             margin-top: 15px;
+            line-height: 20px;
+
         }
     }
 
 }
-

@@ -1,9 +1,7 @@
 import "./_styleCard.scss";
 import { objImg } from "../../utils/img";
 export default function Card({ style, name, academic, opinion, history }) {
-  
-  
-    return (
+  return (
     <div className={`container __card${style}`}>
       <div className="imgCard">
         <img src={objImg[name]} alt="" />
@@ -12,7 +10,6 @@ export default function Card({ style, name, academic, opinion, history }) {
           <p className="academic">{academic}</p>
         </div>
       </div>
-
       <div className={`container __card${style} __info`}>
         <div>
           <p className="Opinion">{opinion}</p>
