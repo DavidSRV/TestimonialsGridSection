@@ -3,55 +3,114 @@ $medium: 'medium';
 $large: 'large';
 
 $screen-small-min: 768px;
-$screen-medium-min: 1024px;
+$screen-medium-min: 1200px;
 $screen-large-min: 3000px;
 
 @mixin for-size($size) {
-  @if $size == $small {
+  @if $size ==$small {
     @media (max-width: $screen-small-min) {
 
-        & {
-            max-width: 1100px;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 30px;
+      & {
+        max-width: 1100px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
 
+        & .container {
+
+          &.__card1 {
+            grid-column: 1;
+          }
+
+          &.__card2 {
+            grid-column: 1;
+          }
+
+          &.__card3 {
+            grid-column: 1;
+          }
+
+          &.__card4 {
+            grid-column:  1;
+          }
+
+          &.__card5 {
+            grid-column: 1;
+          }
 
         }
-      
+
+      }
+
     }
-  } @else if $size == $medium {
+  }
+
+  @else if $size ==$medium {
     @media (max-width: $screen-medium-min) {
-      @content;
+      & {
+        max-width: 1100px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+
+        & .container {
+
+          &.__card1 {
+            grid-column: span 2;
+          }
+
+          &.__card2 {
+            grid-column: span 2;
+          }
+
+          &.__card3 {
+            grid-row: 2;
+            grid-column: span 2;
+          }
+
+          &.__card4 {
+            grid-row:  2;
+            grid-row: 2;
+          }
+
+          &.__card5 {
+            grid-column: span 4;
+          }
+
+        }
+
+      }
     }
-  } @else if $size == $large {
+  }
+
+  @else if $size ==$large {
     @media (max-width: $screen-large-min) {
 
-        & {
-            max-width: 1100px;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 30px;
-        }
+      & {
+        max-width: 1100px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+      }
     }
   }
 }
 
 
-.App{
-    min-height: 100vh;
-    margin: 0px 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.App {
+  min-height: 100vh;
+  margin: 0px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    & .App-main{
-        
-        @include for-size($large);
-        @include for-size(null)
 
-    }
+  & .App-main {
+
+    @include for-size($large);
+    @include for-size($medium);
+    @include for-size($small)
+  }
 
 
 }
